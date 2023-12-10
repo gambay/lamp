@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script>
+        function myFunction() {
+            document.getElementById('change').innerHTML= "Я гей"
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Проект разработан админом тг "канала передоз насваем)"</h1>
-
+    <div class="container">
+        <h1 id="change">Проект разработан админом тг "канала передоз насваем)"</h1>
+    </div>
+    <button onclick="myFunction()">нажми</button>
     <button onclick= "document.getElementById('myLamp') .src='вкл.jpg'">включить</button>
     <img id="myLamp" src="выкл.jpg" alt="">
     <button onclick= "document.getElementById('myLamp') .src='выкл.jpg'">выключить</button>
